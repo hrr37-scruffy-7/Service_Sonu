@@ -7,8 +7,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/Frbo', { useNewUrlParser: true });
 let Schema =  new mongoose.Schema({
   property_id: Number,
   review: Number,
+  review_desc: String,
   rating: Number,
-  price: Number
+  price: Number,
+  desc: String
 });
 
 

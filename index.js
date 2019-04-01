@@ -2,13 +2,14 @@ let express = require('express');
 let app = express();
 let path = require('path');
 let PORT = process.env.PORT || 5003;
-let {Frbo} = require('./models/schema');
+let {Frbo} = require('./server/models/schema');
 
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client')));
 
-app.get('/properties/:id', (req, res) => {
+
+app.post('/properties/:id', (req, res) => {
   console.log(req.params.id)
   Frbo.findOne({property_id: req.params.id}).then(doc => {
     console.log(doc, '******* server.js')
@@ -20,6 +21,9 @@ app.get('/properties/:id', (req, res) => {
   }).catch(err => {console.log(err)})
 })
 
+app.get("/*", (req, res) => {
+  res.render('index');
+})
 
 
 app.listen(PORT, () => {

@@ -1,7 +1,7 @@
 let {Frbo} = require('./schema');
 let {generateSeeding} = require('./seeding');
 
-Frbo.deleteMany({}).then(() => {
+Frbo.deleteMany().then(() => {
   console.log(`deleted`)
   return Frbo.create(generateSeeding())
 }).then(data => {
