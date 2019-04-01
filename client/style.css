@@ -1,0 +1,95 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.side-container {
+  padding: 25px;
+  border: 2px solid black;
+  width: auto;
+  height: auto;
+}
+
+.price {
+  font-size: 2em;
+}
+
+#svg-instant-book{
+  position: absolute;
+  left: 20px;
+}
+
+.price-container {
+  margin-left: 25px;
+}
+
+#available-dates {
+  margin-top: 10px;
+}
+
+.rating-caption {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.75em;
+}
+
+.review-number{
+  font-size: 0.75em;
+}
+
+.btn__label {
+  display: block;
+  color: white;
+  padding: 10px 50px;
+  background-color: blue;
+  border-radius: 25px;
+  transition: background-color 1s;
+  text-align: center;
+}
+
+.btn__label:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+.total {
+  height: 25px;
+  margin-top: 10px;
+}
+
+#total-name {
+  float: left;
+  font-weight: bold;
+}
+
+#total-price {
+  float: right;
+  font-weight: bold;
+}
+
+.total div {
+  display: block;
+}
+
+.total-container {
+  width: inherit;
+  height: 75px;
+}
+
+#taxes {
+  float: left;
+}
+
+#view-details {
+  float: right;
+}
+
+.book-cancel {
+  text-align: center;
+  font-style: italic;
+}
+
+.book-cancel > span {
+  font-weight: 600;
+}

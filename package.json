@@ -1,17 +1,36 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
-  "license": "",
+  "name": "FRBO",
+  "version": "1.0.0",
+  "description": "Side bar calendar with reviews and submit",
+  "author": "Gurjot Sandhu",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "react:dev": "webpack -d --watch",
+    "start:dev": "nodemon server/index.js -w database -w server",
+    "seed": "node server/models/seed.js"
   },
   "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.20",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest": "^24.5.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
