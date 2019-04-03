@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .side-container {
@@ -13,7 +13,7 @@ body {
   font-size: 2em;
 }
 
-#svg-instant-book{
+#svg-instant-book {
   position: absolute;
   left: 20px;
 }
@@ -32,7 +32,7 @@ body {
   font-size: 0.75em;
 }
 
-.review-number{
+.review-number {
   font-size: 0.75em;
 }
 
@@ -92,4 +92,74 @@ body {
 
 .book-cancel > span {
   font-weight: 600;
+}
+
+.owner-container {
+  border-top: 1px solid #ddddde;
+  border-bottom: 1px solid #ddddde;
+  padding: 16px 0;
+  margin: 24px 0;
+  display: flex;
+}
+
+.owner-name {
+  font-weight: 1000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.property-container {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.owner-link {
+  display: block;
+  font-size: 0.87rem;
+  color: #2474de;
+}
+
+.social-btn {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.SVG_SOCIAL {
+  margin-left: 3px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.social-wrapper {
+  position: absolute;
+  right: 25px;
+  z-index: 10;
+  background: white;
+  top: 15px;
+}
+
+#svg-heart:hover > path {
+  fill: red;
+}
+
+.owner-details-mini__avatar {
+  background-image: url('./Owner1.jpg');
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.desc-wrapper {
+  margin-top: 30px;
+}
+
+.owner-details {
+  margin-left: 10px;
 }
