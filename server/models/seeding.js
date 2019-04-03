@@ -41,9 +41,9 @@ function generateSeeding() {
 
 function generateDesc() {
   let descArr = ['Private Cozy', 'Exotic', 'Comfortable', 'Noisy', 'Reasonable']
-  let randIndex = Math.floor(Math.random() * 5)
+  let randIndex = Math.floor(Math.random() * 4)
   let descArr2 = ['fantasitc neighborhood', 'party center', 'downtown', 'by the beach']
-  let randIndex2 = Math.floor(Math.random() * 5)
+  let randIndex2 = Math.floor(Math.random() * 4)
   return descArr[randIndex] + ' Room in ' + descArr2[randIndex2];
 }
 
